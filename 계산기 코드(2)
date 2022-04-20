@@ -1,0 +1,22 @@
+ save 로 시작하면 명령
+  if (whereis(buffer, "save ") == 0) {
+ fp = fopen(버퍼 + 5, "w");
+
+   for (i = 0; i < 26; ++i)
+ fprintf(fp, "%d", flag_v[i]);
+   fprintf(fp, "\n");
+
+   for (i = 0; i < 26; ++i)
+ fprintf(fp, "%d", length_a[i]);
+   fprintf(fp, "\n");
+
+   for (i = 0; i < 26; ++i)
+ (flag_v[i]) fprintf(fp, "%f\n", table_v[i])인 경우;
+
+   for (i = 0; i < 26; ++i)
+    for (j = 0; j < length_a[i]; ++j)
+     fprintf(fp, "%f\n", table_a[i][j]);
+
+   fclose(fp);
+ 계속;
+  }
