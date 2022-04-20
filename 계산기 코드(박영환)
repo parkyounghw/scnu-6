@@ -1,0 +1,46 @@
+더블 아토드 (문자 * 문자열)
+아스키 투 더블
+ascii 값으로 되어 있는 실수 문자열을 double형으로 반환
+{
+ int dplace = 1;
+ 이중 값 = 0;
+
+ 동안 (* 문자열 != '\0') {
+  if (*String <= '9' && *String >= '0')
+ (dplace == 1) 값 = 값 * 10 + * 문자열 - '0'인 경우;
+ 그렇지 않으면 {
+ 값 += (이중) (* 문자열 - '0') / dplace;
+    dplace *= 10;
+   }
+ 그렇지 않으면 (*String == '.') dplace *= 10;
+ ++문자열;
+ }
+ 반환 값;
+}
+
+int 메인 (보이드)
+{
+ 파일 *fp;
+ char 버퍼[127];
+ int i, j, cnt;
+
+  시작
+ printf("시작\n");
+
+ for (i = 0; i < NumofVar; ++i) {
+  flag_v[i] = 0;
+  length_a[i] = 0;
+ }
+
+ 동안 (1) {
+  명령어를 입력받음
+ printf ( "=>");
+  cnt = 0;
+ 동안 (1) {
+ 버퍼 [cnt] = getchar ();
+   if (buffer[cnt] == '\n') {
+ 버퍼 [cnt] = '\0';
+ 휴식;
+   }
+   ++cnt;
+  }
